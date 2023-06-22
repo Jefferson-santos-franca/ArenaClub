@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Arena Club</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img
+                    src="https://static.wixstatic.com/media/bc96f5_5128f713192c4968989268623fd3b2b4~mv2.png/v1/fill/w_108,h_51,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/LOGO-PRETO.png"
+                    alt="Logo"
+                />
+            </header>
+
+            <main>
+                <label>
+                    Aluno
+                    <select id="select-name" onchange="turnTo()">
+                        <option value=""></option>
+                        <option value="jefferson">Jefferson</option>
+                        <option value="vini">Vini</option>
+                        <option value="vitor">Vitor</option>
+                        <option value="ana">Ana</option>
+                        <option value="ricardo">Ricardo</option>
+                        <option value="pamela">Pamela</option>
+                        <option value="maria">Maria</option>
+                        <option value="joao">João</option>
+                    </select>
+                </label>
+
+                <label>
+                    Aula
+                    <select id="select-number">
+                        <option value="0">0</option>
+                        <option value="8">8</option>
+                        <option value="10">10</option>
+                        <option value="6">6</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                        <option value="7">7</option>
+                        <option value="9">9</option>
+                        <option value="3">3</option>
+                    </select>
+                </label>
+
+                <label>Observação:</label><br />
+                <textarea name="" id="obs" cols="30" rows="20"></textarea>
+
+                <button id="send" type="button">Enviar</button>
+
+                <p id="showStudent"></p>
+            </main>
+        </div>
+
+        <script src="./scrypt.js"></script>
+    </body>
+</html>
